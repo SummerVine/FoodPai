@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/iv_welcome_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/iv_background_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+   <LinearLayout
+       android:id="@+id/ll_auther1_id"
+       android:layout_marginTop="250dp"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+    <ImageView
+        android:id="@+id/iv_auther1_id"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@mipmap/red"/>
+    <TextView
+       android:id="@+id/tv_auther1_id"
+       android:layout_width="wrap_content"
+       android:layout_height="match_parent"
+       android:layout_marginLeft="5dp"
+       android:text="作者"/>
+   </LinearLayout>
+    <TextView
+        android:id="@+id/tv_title1_id"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/ll_auther1_id"
+        android:text="标题"/>
+    <TextView
+        android:id="@+id/tv_number1_id"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/tv_title1_id"
+        android:text="xxxxx人阅读"/>
+</RelativeLayout>

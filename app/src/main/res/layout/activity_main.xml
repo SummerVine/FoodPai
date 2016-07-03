@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.green.foodpai.MainActivity">
+    <RelativeLayout
+        android:id="@+id/ll_top_id"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+    <ImageView
+        android:id="@+id/iv_id"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@mipmap/ic_homepage_search" />
+    <EditText
+        android:id="@+id/rt_id"
+        android:layout_alignParentLeft="true"
+        android:layout_width="360dp"
+        android:layout_height="match_parent"
+        android:hint="请输入食物名称"
+        android:paddingLeft="50dp"/>
+
+    <ImageView
+        android:id="@+id/iv_scan_id"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@mipmap/ic_homepage_scan"/>
+
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/gr_id"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/tab_home_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="逛吃"
+            android:textSize="12sp"
+            android:drawableTop="@mipmap/ic_tab_home_default"/>
+        <RadioButton
+            android:id="@+id/tab_search_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="食物百科"
+            android:textSize="12sp"
+            android:drawableTop="@mipmap/ic_tab_search_default"/>
+        <RadioButton
+            android:id="@+id/tab_my_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="我的"
+            android:textSize="12sp"
+            android:drawableTop="@mipmap/ic_tab_my_default"/>
+
+    </RadioGroup>
+
+    <RelativeLayout
+        android:id="@+id/main_rlfragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/ll_top_id"
+        android:layout_marginBottom="5dp"
+        android:layout_alignTop="@+id/gr_id"
+        android:background="#68f33b">
+    </RelativeLayout>
+   
+</RelativeLayout>
