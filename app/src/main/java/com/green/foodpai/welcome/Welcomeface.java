@@ -23,7 +23,7 @@ public class Welcomeface extends AppCompatActivity{
         new Thread() {
             @Override
             public void run() {
-                SystemClock.sleep(1500);
+                SystemClock.sleep(1000);
                 Welcomeface.this.startActivity(new Intent(
                         Welcomeface.this, MainActivity.class));
                 finish();
