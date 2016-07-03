@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="#FFFFFF">
+
+                <ImageView
+                    android:id="@+id/food_vs_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/ic_food_vs" />
+
+                <TextView
+                    android:id="@+id/food_vs_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/food_vs_iv"
+                    android:text="食物对比"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/foodData_vs_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/food_vs_tv"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/food_vs_iv"
+                    android:text="食物数据大pk" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/ic_arrow_right_normal" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:id="@+id/food_class_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="10dp"
+                    android:text="食物分类"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/redLine_class_iv"
+                    android:layout_width="20dp"
+                    android:layout_height="2dp"
+                    android:layout_below="@id/food_class_tv"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="20dp"
+                    android:background="#FF0000" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/food_class_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/redLine_class_iv"
+                    android:layout_marginBottom="20dp">
+
+                </android.support.v7.widget.RecyclerView>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:id="@+id/hot_brand_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="10dp"
+                    android:text="热门品牌"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/redLine_brand_iv"
+                    android:layout_width="20dp"
+                    android:layout_height="2dp"
+                    android:layout_below="@id/hot_brand_tv"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="20dp"
+                    android:background="#FF0000" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/hot_brand_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/redLine_brand_iv"
+                    android:layout_marginBottom="20dp">
+
+                </android.support.v7.widget.RecyclerView>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:id="@+id/food_chain_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="10dp"
+                    android:text="热门品牌"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/redLine_chain_iv"
+                    android:layout_width="20dp"
+                    android:layout_height="2dp"
+                    android:layout_below="@id/food_chain_tv"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="20dp"
+                    android:background="#FF0000" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/food_chain_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/redLine_chain_iv"
+                    android:layout_marginBottom="20dp">
+
+                </android.support.v7.widget.RecyclerView>
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>
