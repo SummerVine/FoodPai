@@ -34,9 +34,11 @@
 
     <RadioGroup
         android:id="@+id/gr_id"
+        android:layout_marginTop="1dp"
         android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#ffffff"
         android:orientation="horizontal">
         <RadioButton
             android:id="@+id/tab_home_id"
