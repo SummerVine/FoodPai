@@ -47,7 +47,7 @@
             android:gravity="center"
             android:text="逛吃"
             android:textSize="12sp"
-            android:drawableTop="@mipmap/ic_tab_home_default"/>
+            android:drawableTop="@drawable/tab_home"/>
         <RadioButton
             android:id="@+id/tab_search_id"
             android:layout_width="0dp"
@@ -57,7 +57,7 @@
             android:gravity="center"
             android:text="食物百科"
             android:textSize="12sp"
-            android:drawableTop="@mipmap/ic_tab_search_default"/>
+            android:drawableTop="@drawable/tab_search"/>
         <RadioButton
             android:id="@+id/tab_my_id"
             android:layout_width="0dp"
@@ -67,7 +67,7 @@
             android:gravity="center"
             android:text="我的"
             android:textSize="12sp"
-            android:drawableTop="@mipmap/ic_tab_my_default"/>
+            android:drawableTop="@drawable/tab_my"/>
 
     </RadioGroup>
 
