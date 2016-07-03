@@ -5,9 +5,9 @@ import android.os.Bundle;
 import android.os.SystemClock;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageView;
-import com.green.foodpai.MainActivity;
-import com.green.foodpai.R;
 
+import com.green.foodpai.ui.MainActivity;
+import com.green.foodpai.R;
 
 /**
  * Created by green on 2016/7/2.
@@ -23,7 +23,7 @@ public class Welcomeface extends AppCompatActivity{
         new Thread() {
             @Override
             public void run() {
-                SystemClock.sleep(1000);
+                SystemClock.sleep(5000);
                 Welcomeface.this.startActivity(new Intent(
                         Welcomeface.this, MainActivity.class));
                 finish();
