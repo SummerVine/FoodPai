@@ -9,7 +9,7 @@
         <!--主界面-->
         <activity android:name=".MainActivity"> </activity>
         <!--初始化界面-->
-        <activity android:name="welcome.Welcomeface"
+        <activity android:name=".welcome.Welcomeface"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
