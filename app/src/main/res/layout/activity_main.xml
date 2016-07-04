@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.MainActivity">
+    tools:context="com.green.foodpai.ui.MainActivity">
     <RelativeLayout
         android:id="@+id/ll_top_id"
         android:layout_alignParentTop="true"
@@ -31,12 +31,6 @@
         android:background="@mipmap/ic_homepage_scan"/>
 
     </RelativeLayout>
-    <FrameLayout
-        android:id="@+id/replace_fragment"
-        android:layout_below="@id/ll_top_id"
-        android:layout_above="@+id/gr_id"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"></FrameLayout>
 
     <RadioGroup
         android:id="@+id/gr_id"
@@ -56,6 +50,7 @@
             android:text="逛吃"
             android:textSize="12sp"
             android:checked="true"
+            android:onClick="GoHome"
             android:drawableTop="@drawable/tab_home"/>
         <RadioButton
             android:id="@+id/tab_search_id"
@@ -80,5 +75,13 @@
 
     </RadioGroup>
 
+    <FrameLayout
+
+        android:id="@+id/main_rlfragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/ll_top_id"
+        android:layout_marginBottom="5dp"
+        android:layout_alignTop="@+id/gr_id"/>
    
 </RelativeLayout>

@@ -7,6 +7,7 @@ import android.widget.RadioGroup;
 
 import com.green.foodpai.R;
 import com.green.foodpai.fragment.BaseFragment;
+import com.green.foodpai.fragment.FirstFragment;
 import com.green.foodpai.fragment.WikiFragment;
 import com.green.foodpai.utils.TabFragmentsUtils;
 
@@ -25,13 +26,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         radioGroup = ((RadioGroup) findViewById(R.id.gr_id));
         initFragment();
-        TabFragmentsUtils tabFragmentsUtils = new TabFragmentsUtils(radioGroup,fragments,fragmentManager,R.id.replace_fragment);
+        TabFragmentsUtils tabfragmentUtiles=new TabFragmentsUtils(radioGroup,fragments,fragmentManager,R.id.main_rlfragment);
     }
 
     private void initFragment() {
         fragments = new ArrayList<>();
+        fragments.add(new FirstFragment());
         fragments.add(new WikiFragment());
-        fragments.add(new WikiFragment());
-        fragments.add(new WikiFragment());
+        fragments.add(new FirstFragment());
+
     }
+
 }

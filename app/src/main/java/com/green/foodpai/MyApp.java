@@ -25,7 +25,7 @@ public class MyApp extends Application {
 
     private void initVolley() {
         requestQueue = Volley.newRequestQueue(this);
-    }
+}
 
     public RequestQueue getRequestQueue() {
         return requestQueue;
